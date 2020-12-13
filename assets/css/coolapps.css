@@ -1,0 +1,27 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+footer{
+    text-align: center;
+}
+
+.login-form{
+    width:400px;
+    margin:auto;
+    margin-top:200px;
+    border:1px solid lightgrey;
+    border-radius: 4px;
+    box-shadow: 0 0 10px lightgrey;
+    padding:20px;
+    height:330px;
+}
+
+.container{
+    min-height: 600px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc;
+    opacity: 1; /* Firefox */
+  }
+  

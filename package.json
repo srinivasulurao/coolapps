@@ -1,0 +1,19 @@
+{
+  "name": "coolapps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "devStart":"nodemon index.js"
+  },
+  "author": "N.Srinivasulu Rao (http://srinivasulurao.com)",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  }
+}
