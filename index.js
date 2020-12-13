@@ -12,4 +12,4 @@ app.get("/login",(req,res)=>{
      res.render("login.ejs"); 
 })
 
-app.listen(5000);
+app.listen(3000);
