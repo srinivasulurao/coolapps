@@ -1,0 +1,23 @@
+<%- include('header.ejs') -%>
+<h1>Images From Nasa's Mars Rover Mission</h1><hr>
+<% api_response.forEach(function(mars) { %>
+   <div class='card' style='margin:10px;width:300px;min-height:450px;display: inline-block;float:left;font-size:14px;'>
+       <a href='<%= mars.img_src %>' target='_blank'><img class="img-thumbnail" src="<%= mars.img_src %>"  alt="..." ></a>
+       <div class="card-body">
+        <label style="width:120px;display:inline-block;font-weight:bold;color:mediumaquamarine">Rover Name </label><%= mars.rover.name %><br>
+        <label style="width:120px;display:inline-block;font-weight:bold;color:mediumaquamarine">Earth Date  </label><%= mars.earth_date %><br>
+        <label style="width:120px;display:inline-block;font-weight:bold;color:mediumaquamarine">Landing Date  </label><%= mars.rover.landing_date %>
+        <label style="width:120px;display:inline-block;font-weight:bold;color:mediumaquamarine">Lauch Date  </label><%= mars.rover.launch_date %>
+        <label style="width:120px;display:inline-block;font-weight:bold;color:mediumaquamarine">Camera Name  </label><%= mars.camera.full_name %>
+      </div>
+</div>
+<% }); %>
+
+<div style='clear:both;margin:auto;width:200px'>
+    <ul class="pagination">
+        <li class='page-item'><a class="page-link" href="?page=<%= prev_page_no %>">Previous</a></li>
+        <li class='page-item'><a class="page-link" href="?page=<%= next_page_no %>">Next</a></li>
+    </ul>
+</div>
+
+<%- include('footer.ejs') -%>

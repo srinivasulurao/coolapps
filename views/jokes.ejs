@@ -1,0 +1,17 @@
+<%- include('header.ejs') -%>
+<h1>Funny Jokes <a class='btn btn-success' href='' style='float:right;top: 20px;position: relative;'>Refresh</a></h1><hr>
+<div class="accordian">
+<% api_response.forEach(function(joke) { %>
+<div class="accordian-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <%= joke.setup %> &nbsp; <span class='badge bg-info text-dark'><%= joke.type %></span>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body"><%= joke.punchline %></div></div>
+</div>
+<% }); %>
+</div>
+
+<%- include('footer.ejs') -%>

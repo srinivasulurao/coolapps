@@ -1,8 +1,16 @@
 *{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 footer{
     text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+    clear: both;
+}
+
+h1{
+    color: seagreen;
+    text-shadow: 3px 5px 5px;
 }
 
 .login-form{
@@ -15,7 +23,9 @@ footer{
     padding:20px;
     height:330px;
 }
-
+.login-form label{
+    margin-top:10px;
+}
 .container{
     min-height: 600px;
 }
@@ -24,4 +34,12 @@ footer{
     color: #ccc;
     opacity: 1; /* Firefox */
   }
+
+.navbar-nav a{
+    margin-right: 10px;
+}
+
+h1{
+    margin-top:10px;
+}
   

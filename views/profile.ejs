@@ -1,0 +1,13 @@
+<%- include('header.ejs') -%>
+<h1>Check out the cool apps</h1><hr>
+<% free_apps.forEach(function(freeApp) { %>
+<div class="card" style="width: 18rem; float:left; display: inline-block;margin-right:20px;min-height:400px">
+    <a href='<%= freeApp.Link %>' ><img src="<%= freeApp.Image %>" class="card-img-top" alt="..." style='min-height:300px'></a>
+    <div class="card-body">
+      <a href='<%= freeApp.Link %>' ><h5 class="card-title"><%= freeApp.Name %></h5></a>  
+      <p class="card-text"><%= freeApp.Text %></p>
+    </div>
+    
+</div>
+<% }); %>
+<%- include('footer.ejs') -%>

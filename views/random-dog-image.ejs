@@ -1,0 +1,9 @@
+<%- include('header.ejs') -%>
+<h1>Random Dog Image <a class='btn btn-success' href='' style='float:right;top: 20px;position: relative;'>Refresh Image</a> </h1>
+<hr>
+​<picture>
+    <source srcset="<%= api_response.message %>" >
+    <img src="<%= api_response.message %>" class="img-fluid img-thumbnail" alt="..." style="max-height:500px;margin-left:auto;margin-right:auto;display: block;">
+</picture>
+
+<%- include('footer.ejs') -%>
