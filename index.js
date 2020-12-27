@@ -4,6 +4,7 @@ var bodyParser=require('body-parser');
 const UserAuth=require("./models/UserAuth");
 const FreeApps = require('./models/FreeApp');
 var sessionStorage=require("sessionstorage"); 
+const PORT = process.env.PORT || 5000
 
 app.set('view engine','ejs'); //Setting the view engine to show the template.
 app.use(express.static(__dirname + '/assets'));
@@ -68,4 +69,4 @@ app.get("/logout",(req,res)=>{
    return res.redirect("/login");
 });
 
-app.listen(5000);
+app.listen(PORT);
