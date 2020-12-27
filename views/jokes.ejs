@@ -1,4 +1,4 @@
-<%- include('header.ejs') -%>
+<%- include('header.ejs',{logged_in:logged_in}) -%>
 <h1>Funny Jokes <a class='btn btn-success' href='' style='float:right;top: 20px;position: relative;'>Refresh</a></h1><hr>
 <div class="accordian">
 <% api_response.forEach(function(joke) { %>

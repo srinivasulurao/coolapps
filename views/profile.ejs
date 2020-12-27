@@ -1,4 +1,4 @@
-<%- include('header.ejs') -%>
+<%- include('header.ejs',{logged_in:logged_in}) -%>
 <h1>Check out the cool apps</h1><hr>
 <% free_apps.forEach(function(freeApp) { %>
 <div class="card" style="width: 18rem; float:left; display: inline-block;margin-right:20px;min-height:400px">

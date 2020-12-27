@@ -1,4 +1,4 @@
-<%- include('header.ejs') -%>
+<%- include('header.ejs',{logged_in:logged_in}) -%>
 <h1>Images From Nasa's Mars Rover Mission</h1><hr>
 <% api_response.forEach(function(mars) { %>
    <div class='card' style='margin:10px;width:300px;min-height:450px;display: inline-block;float:left;font-size:14px;'>

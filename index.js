@@ -11,7 +11,8 @@ app.use(express.static(__dirname + '/assets'));
 app.use(bodyParser.urlencoded({extended: true})); //Body parser for 
 
 app.get("/",(req,res)=>{
-    res.render("home.ejs"); 
+    let logged_in=(sessionStorage.getItem('user_id'))?true:false;
+    res.render("home.ejs",{logged_in:logged_in }); 
 });
 
 app.get("/login",(req,res)=>{
